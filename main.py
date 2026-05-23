@@ -31,7 +31,7 @@ ROLE_LANGUAGES = {
 
     "arábia": "ar",
     "chinês": "zh-cn"
-    "italiano": "it"
+    "italiano": "it",
     
 }
 
