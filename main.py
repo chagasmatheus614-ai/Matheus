@@ -46,7 +46,7 @@ class TranslateButton(discord.ui.View):
         self.original_text = original_text
 
     @discord.ui.button(
-        label="🌐 Traduzir",
+        label="🌐",
         style=discord.ButtonStyle.primary
     )
     async def translate_button(
