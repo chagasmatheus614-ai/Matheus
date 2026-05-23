@@ -47,7 +47,7 @@ class TranslateButton(discord.ui.View):
 
     @discord.ui.button(
         label="🌐",
-        style=discord.ButtonStyle.primary
+        style=discord.ButtonStyle.secondary
     )
     async def translate_button(
         self,
