@@ -4,7 +4,7 @@ from deep_translator import GoogleTranslator
 import asyncio
 import os
 
-TOKEN = os.getenv("MTUwNzQ5NTg5MTQwNDE5Mzg5NA.GJ1d7U.gZ0k1s0GScic1OxvcXGQLRyywhburuIiFmhaiU")
+TOKEN = os.getenv("TOKEN")
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -78,12 +78,13 @@ async def on_message(message: discord.Message):
     if not content:
         return
     
-    await message.channel.send(
-            f"Mensagem de {message.author.mention}",
-            view=TranslateButton(content)
+    await message.reply(
+           view=TranslateButton(content),
+           mention_author=False
+            
         )
         
     await bot.process_commands(message)
     
 
-bot.run("MTUwNzQ5NTg5MTQwNDE5Mzg5NA.GJ1d7U.gZ0k1s0GScic1OxvcXGQLRyywhburuIiFmhaiU")
+bot.run(TOKEN)
