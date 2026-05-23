@@ -27,6 +27,12 @@ ROLE_LANGUAGES = {
     "francês": "fr",
     "japonês": "ja",
     "brasileiro": "pt",
+
+
+    "arábia": "ar",
+    "chinês": "zh-cn"
+    "italiano": "it"
+    
 }
 
 async def traslate_text(text: str, target: str) -> str:
